@@ -1,0 +1,3 @@
+class TicketWatcher
+  include
+end
