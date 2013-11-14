@@ -2,5 +2,9 @@ require 'bundler'
 Bundler.require
 
 require File.expand_path '../app.rb', __FILE__
+require File.expand_path '../ticket.rb', __FILE__
 
-run UberReactor
+map '/ticket' do
+  run UberReactor::Tickets
+end
+
