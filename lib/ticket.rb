@@ -47,7 +47,7 @@ module UberReactor
 
       json_data = JSON.generate(body)
 
-      RestClient.post "https://voonami.campfirenow.com/room/#{campfire_room}/speak.json", json_data, {:authorization => 'Basic MzlhNWY1Mjk1MzhjNDBiOGVkNzJlMmYxYzI4ZTRhMDViZGE3Zjg0Nzo=', :content_type => :json}
+      RestClient.post "https://voonami.campfirenow.com/room/#{campfire_room}/speak.json", json_data, {:authorization => 'Basic REPLACE ME WITH BASE64 HASH OF API KEY', :content_type => :json}
 
       status '200'
     end
